@@ -71,7 +71,7 @@ processDb.prototype.processMovie = function(movies, callback) {
 		},
 		function(MovieResponse, flag, callback) {
 			console.log(MovieResponse);
-			if (!flag) {
+			if (!flag && MovieResponse.id != null) {
 				let sql = 'INSERT INTO ?? (??,??,??,??,??) VALUES (?,?,?,?,?)';
 				let inserts  = ["movie","ID","Name","Year","Poster","Type",
 				MovieResponse.id,MovieResponse.title,MovieResponse.year,MovieResponse.poster,MovieResponse.type];
