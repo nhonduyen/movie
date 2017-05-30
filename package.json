@@ -1,0 +1,19 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": "get movie from imdb",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "keywords": [
+    "movie_getter"
+  ],
+  "author": "NGUYEN NHON DUYEN",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.4.1",
+    "mysql": "^2.13.0",
+    "request": "^2.81.0"
+  }
+}
